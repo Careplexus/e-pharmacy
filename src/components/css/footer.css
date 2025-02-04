@@ -1,0 +1,27 @@
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgba(242, 242, 242, 0.8);
+  box-shadow: 0px 0px .5px rgba(0, 0, 0, 0.2);
+}
+.footer-container h2{
+  font-size: 1.1rem;
+  border-right: 2px solid blue;
+  padding-right: .5rem;
+  height: 5rem
+  bottom: 0;
+}
+.footer-container div{
+  margin-left: .5rem;
+}
+.footer-container ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin-bottom: .5rem;
+  color: #333;
+  font-weight: 500;
+}

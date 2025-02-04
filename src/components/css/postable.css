@@ -1,0 +1,18 @@
+.pos-table-container {
+  overflow: auto;
+  min-width: 100%;
+}
+
+.pos-table thead{
+  text-align: center;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+.pos-table tbody tr:nth-child(even){
+  background-color: #f5f5f5;
+}
+
+.pos-table tbody td{
+  padding: .2rem;
+}
