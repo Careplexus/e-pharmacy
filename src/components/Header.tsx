@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import './css/header.css';
 import { navBarLinks } from '../data';
 
@@ -14,7 +14,7 @@ const Header = () => {
   }
   return (
     <div className='nav-container'>
-      <h2 className='logo'>Careplexus</h2>
+      <h2 className='logo'><Link to='/'>Careplexus</Link></h2>
       <button onClick={handleMenu}>{isOpen ? <i>&#10006;</i> : <i>&#9776;</i> }</button>
       <div className={`nav-links ${isOpen ? 'open' : ''}`}>
       { navBarLinksArray.map((link, index) =>(

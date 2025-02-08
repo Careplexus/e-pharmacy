@@ -4,6 +4,10 @@ import Home from './Home';
 import Pharmaceuticals from './Pharmaceuticals';
 import Pharmaceutical from './Pharmaceutical';
 import PosTable from '../components/PosTable';
+import Services from '../components/Services';
+import Carousel from '../components/Carousel';
+import OutletProducts from '../components/OutletProducts';
+import Outlet from './Outlet';
 
 
 
@@ -13,5 +17,9 @@ export {
   Home,
   Pharmaceutical,
   Pharmaceuticals,
-  PosTable
+  PosTable,
+  Services,
+  Carousel,
+  OutletProducts,
+  Outlet,
 }

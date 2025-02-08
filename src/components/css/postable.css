@@ -16,3 +16,10 @@
 .pos-table tbody td{
   padding: .2rem;
 }
+.pos-table a{
+  text-decoration: none;
+  color: #000;
+}
+.pos-table tbody tr:hover{
+  background-color: #ddd;
+}

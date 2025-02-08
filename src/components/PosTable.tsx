@@ -1,3 +1,5 @@
+
+import { Link } from 'react-router-dom';
 import './css/postable.css';
 import { posData } from '../data';
 
@@ -12,7 +14,7 @@ const PosTable = () => {
         <thead>
           <tr>
             <th>id</th>
-            <th><input type='text' placeholder='Search' />name</th>
+            <th><input type='text' placeholder='Search' /></th>
             <th>unit price</th>
             <th>type</th>
             <th>category</th>
@@ -24,7 +26,7 @@ const PosTable = () => {
           { posData.map((pos, index) =>(
             <tr key={index}>
               <td>{pos.id}</td>
-              <td>{pos.name}</td>
+              <td><Link to={`/pharmaceuticals/${pos.id}`}>{pos.name}</Link></td>
               <td>&#8358;{pos.unitPrice}</td>
               <td>{pos.type}</td>
               <td>{pos.category}</td>

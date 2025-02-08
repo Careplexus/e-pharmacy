@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './custom-styles.css';
 import './App.css'
 import { Home, Header, Footer,
-         Pharmaceuticals,        Pharmaceutical,
+         Pharmaceuticals,        Pharmaceutical, Outlet,
        } from './pages/Index'
 
 export default function App() {
@@ -15,6 +16,8 @@ export default function App() {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/pharmaceuticals' element={<Pharmaceuticals/>} />
+            <Route path='/pharmaceuticals/:id' element={<Pharmaceutical/>} />
+            <Route path='/outlet' element={<Outlet/>} />  
           </Routes>
         </main>
         <footer>

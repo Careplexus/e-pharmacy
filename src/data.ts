@@ -1,7 +1,7 @@
 // navigation bar link items 
 type Link = {
   name: string;
-  path: string;
+  to: string;
 }
 
 type NavBarLinks = {
@@ -75,3 +75,21 @@ export const posData: PosData[] = [
   { id: 39, name: "Stethoscope", unitPrice: 5000, type: "Consumable", category: "Diagnostic", stockQty: 20, totalPrice: 100000 },
   { id: 40, name: "Oxygen Mask", unitPrice: 1500, type: "Consumable", category: "Respiratory", stockQty: 25, totalPrice: 37500 }
 ];
+
+// Landing page carousel data
+type CarouselData = {
+  image: string;
+  description: string;
+}
+
+export const carouselData: CarouselData[] = [
+  { image: '/assets/carousel-image-1.jpg',
+    description: 'From daily vitamins to essential prescriptions, we provide trusted products for your well-being.',
+  },
+  { image: '/assets/nevea.jpg',
+   description: 'Explore dermatologist-recommended skincare products for healthy, glowing skin.'
+  },
+  { image: '/assets/laboratory.jpg',
+   description: 'Discover the latest in pharmaceuticals and medications, including over-the-counter drugs.'
+  }
+]
