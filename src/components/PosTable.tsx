@@ -26,7 +26,7 @@ const PosTable = () => {
           { posData.map((pos, index) =>(
             <tr key={index}>
               <td>{pos.id}</td>
-              <td><Link to={`/pharmaceuticals/${pos.id}`}>{pos.name}</Link></td>
+              <td><Link to={`/outlet-product/${pos.id}`}>{pos.name}</Link></td>
               <td>&#8358;{pos.unitPrice}</td>
               <td>{pos.type}</td>
               <td>{pos.category}</td>

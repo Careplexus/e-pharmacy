@@ -1,6 +1,7 @@
 .pos-table-container {
   overflow: auto;
   min-width: 100%;
+  margin-top: 2rem;
 }
 
 .pos-table thead{

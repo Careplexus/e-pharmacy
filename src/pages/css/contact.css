@@ -1,0 +1,111 @@
+.contact{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 15rem 1fr auto;
+  width: 100%;
+}
+.contact-header{
+  width: 100%;
+  background-image: url('/assets/contact-us.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-header h1{
+  color: var(--text-white);
+  background-color: rgba(0,0,0,0.5);;
+  padding: .5rem 1rem;
+  animation: contact-header-animate 2s ease-in-out;
+}
+
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  margin: 1rem auto;
+}
+.contact-form label{
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: .8rem 0 .4rem 0;
+}
+.contact-form label:first-of-type{
+  margin-top: 0;
+}
+
+.contact-form input[type='text'],
+.contact-form input[type='email']{
+  width: 100%;
+  padding: .5rem;
+  height: 3.5rem;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+.contact-form input[type='text']:focus,
+.contact-form input[type='email']:focus,
+.contact-form select:focus,
+.contact-form textarea:focus{
+  outline: none;
+  border-bottom: 2px solid var(--primary-color);
+  
+}
+
+.contact-form select, 
+.contact-form textarea{
+  width: 100%;
+  padding: .5rem;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--secondary-color);
+}
+.contact-form textarea{
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.contact-form button{
+  width: 100%;
+  padding: .8rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: var(--text-white);
+  background: linear-gradient(to right, var(--primary-color), red);
+}
+
+.contact-form button:hover{
+  background: linear-gradient(to right, red, var(--primary-color));
+}
+
+.contact-address{
+  display: flex;
+  gap: .5rem;
+  margin: 2rem 0;
+  padding: 0 .5rem;
+}
+
+.contact-address > span{
+  font-size: .8rem;
+  color: var(--text-color);
+  box-shadow: var(--box-shadow);
+  padding: .5rem .2rem;
+}
+@keyframes contact-header-animate{
+  0%{
+    transform: translateX(-50px);
+    
+  }
+  100%{
+    transform: translateX(0);
+  }
+}

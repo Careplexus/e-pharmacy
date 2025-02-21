@@ -30,3 +30,13 @@
   color: #333;
   font-weight: 500;
 }
+
+.footer-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+.footer-icons i{
+  font-size: 1.7rem;
+}

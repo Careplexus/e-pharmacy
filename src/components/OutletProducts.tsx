@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './css/outlet-products.css';
 
 import { posData } from '../data';
@@ -14,7 +15,7 @@ const OutletProducts = () =>{
                 <h3>{item.name}</h3>
                 <p>&#10084;&#65039;</p>
             </div>
-            <img src='/assets/nevea.jpg' alt={item.name} />
+            <Link to={`/outlet-product/${item.id}`}><img src='/assets/nevea.jpg' alt={item.name} /></Link>
             <div className='card-footer'>
              <p>&#8358;{item.unitPrice}</p>
               <button className='select-item'>Select Item</button>

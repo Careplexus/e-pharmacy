@@ -9,6 +9,9 @@ a{
   color: #000;
 }
 
+html{
+  font-size: 62.5%;
+}
 
 .app-container {
   display: grid;
@@ -16,7 +19,6 @@ a{
   grid-template-rows: 5rem 1fr auto;
   min-height: 100vh;
   font-family: var(--font-primary);
-  font-size: 10px;
 }
 
 main{

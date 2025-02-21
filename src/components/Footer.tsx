@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './css/footer.css';
 //import { footerLinks } from '../data';
 
@@ -7,16 +8,15 @@ const Footer = () => {
       <h2>Careplexus</h2>
       <div>
         <ul>
-          <li>About Us</li>
-          <li>Contact Us</li>
-          <li>Terms of Use</li>
+          <li><Link to='/about'>About Us</Link></li>
+          <li><Link to='/contact'>Contact Us</Link></li>
         </ul>
-        <p>Copyright &copy; 2024 Careplexus Pharmacy</p>
+        <p>&copy; 2024 Careplexus Pharmacy</p>
       </div>
-      <div>
-        <p>Facebook</p>
-        <p>Twitter</p>
-        <p>Instagram</p>
+      <div className='footer-icons'>
+        <i className='fa-brands fa-facebook'></i>
+        <i className='fa-brands fa-twitter'></i>
+        <i className='fa-brands fa-instagram'></i>
       </div>
     </div>
   )

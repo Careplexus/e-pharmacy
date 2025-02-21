@@ -8,15 +8,15 @@
     --text-color: #333333; /* Dark gray for readability */
     --muted-text-color: #666666; /* Lighter text for subheadings */
     --border-color: #E0E0E0; /* Light gray borders */
-    --shadow-color: rgba(0, 0, 0, 0.05); /* Soft shadow effect */
+    --shadow-color: rgba(0, 0, 0, 0.1); /* Soft shadow effect */
 
     /* === Typography === */
     --font-primary: 'Poppins', sans-serif; /* Modern, clean font */
     --font-secondary: 'Roboto', sans-serif; /* Backup font */
-    --base-font-size: 1rem; /* Standard font size */
-    --medium-font-size: 2rem; /* Medium font size */
-    --large-font-size: 2.5rem; /* Large font size */
-    --button-font-size: .8rem; /* Button font size */
+    --base-font-size: 1.3rem; /* Standard font size */
+    --medium-font-size: 2.3rem; /* Medium font size */
+    --large-font-size: 3rem; /* Large font size */
+    --button-font-size: 1.2rem; /* Button font size */
     --heading-font-weight: 700; /* Bold headings */
     --body-font-weight: 400; /* Normal text weight */
     
@@ -33,7 +33,7 @@
     --button-background: #4A90E2; /* Primary button color */
     --button-text-color: #FFFFFF; /* White text on buttons */
     --button-hover-background: #357ABD; /* Darker blue on hover */
-    --button-padding: .8rem 1.8rem; /* Comfortable button padding */
+    --button-padding: 1rem 2rem; /* Comfortable button padding */
     --button-radius: 5px; /* Rounded edges */
     --button-shadow: 0px 4px 6px var(--shadow-color); /* Soft shadow effect */
 
@@ -69,6 +69,7 @@
     transition: background-color var(--transition-speed), color var(--transition-speed);
     box-shadow: var(--button-shadow); 
     margin-top: var(--element-spacing);
+    font-size: var(--button-font-size);
 }
 
 .btn-primary{
@@ -79,13 +80,20 @@
     background-color: var(--button-hover-background);
 }
 .btn-secondary{
-    background-color: var(--secundary-color);
+    background-color: var(--secondary-color);
     color: var(--text-color);
-    font-size: var(--button-font-size);
-    font-weight: var(--body-font-weight)
-    box-shadow: var(--shadow-color);
+    box-shadow: va(--button-shadow);
     border: 1px solid var(--border-color);
 }
 .btn-secondary:hover{
     background-color: var(--primary-color);
+}
+
+.btn-yellow{
+    background-color: #FFC107;
+    color: var(--text-white);
+}
+
+.svg-root{
+    fill: var(--primary-color) !important;
 }
